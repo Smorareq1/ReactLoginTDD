@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+//npx react-scripts test --coverage --watchAll=false
+
+test('muestra el formulario de login', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText(/tdd login: login/i)).toBeInTheDocument();
 });
